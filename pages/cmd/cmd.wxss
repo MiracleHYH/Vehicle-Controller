@@ -1,0 +1,77 @@
+/* pages/cmd/cmd.wxss */
+@import "../../lib/weui.wxss";
+
+.cmd-box {
+  margin-top: 20rpx;
+  height: 300rpx;
+  width: 98%;
+  background-color: rgba(223, 228, 228, 0.733);
+  border: 1rpx solid #747171;
+  border-radius: 50rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn { 
+  height: 200rpx;
+  width: 140rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  border-radius: 50%;
+  z-index: 10;
+} 
+.btn image {
+  height: 140rpx;
+  width: 140rpx;
+}
+.btn text {
+  color: rgb(0, 0, 0);
+  font-size: 35rpx;
+}
+
+.btn button {
+  position: absolute;
+  height: 200rpx;
+  width: 140rpx;
+  opacity: 0;
+  z-index: 99;
+  border: 0 solid #ffffff;
+  border-radius: 500rpx;
+  box-shadow: 4rpx 1rpx 1rpx #cccccc;
+}
+
+.page-section {
+  margin-bottom: 5rpx;
+}
+
+.button {
+  /* margin-top: -73rpx; */
+  background-color: rgb(55, 197, 91);
+  color: white;
+  border-radius: 10rpx; 
+  font-size: 32rpx;
+}
+
+.picker {
+  width: 60%;
+  height: 70rpx;
+  bottom: 0;
+  margin-left: 10rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: all .4s ease-in-out 0;
+  font-size: 32rpx;
+  border: 4rpx solid rgb(226, 221, 221);
+  border-radius: 10rpx;
+  line-height: 70rpx;
+  text-align:center;
+}
+
+page{
+  background-color: #F8F8F8;
+}

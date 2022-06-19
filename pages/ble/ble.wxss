@@ -1,0 +1,49 @@
+
+.devices_summary {
+  margin-top: 5rpx;
+  padding: 5rpx;
+  font-size: 30rpx;
+}
+.device_list {
+  min-height: 1010rpx;
+  margin: 0rpx 3rpx 25rpx 3rpx;
+  border: 5rpx solid rgb(226, 221, 221);
+  border-radius: 10rpx;
+  width: auto;
+}
+.device_item {
+  border-bottom: 1rpx solid #EEE;
+  padding: 10rpx;
+  color: #666;
+}
+.device_item_hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+.connected_info {
+  /* position: fixed; */
+  top: 0rpx;
+  width: 100%;
+  background-color: #038f1abe;
+  padding: 5rpx;
+  padding-bottom: 5rpx;
+  margin-top: env(safe-area-inset-bottom);
+  font-size: 32rpx;
+  line-height: 35rpx;
+  min-height: 35rpx;
+  box-shadow: 0rpx 0rpx 0rpx 0rpx;
+}
+.dcon_btn{
+  top: -5rpx;
+  right: -25rpx;
+  color: rgb(0, 0, 0);
+  background-color: #e2563e;
+  border-radius: 10rpx;
+  height: 42rpx;
+  line-height: 12rpx;
+  font-size: 32rpx;
+}
+.connected_info .operation {
+  position: absolute;
+  display: inline-block;
+  right: 30rpx;
+}

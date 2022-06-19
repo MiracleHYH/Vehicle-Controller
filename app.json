@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/cmd/cmd",
+    "pages/ble/ble"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "CQU - PS&MC Lab",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#2c2c2c",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#ffffff",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/cmd/cmd",
+        "text": "控制台",
+        "iconPath": "icons/command.png",
+        "selectedIconPath": "icons/command-s.png"
+      },
+      {
+        "pagePath": "pages/ble/ble",
+        "text": "蓝牙连接",
+        "iconPath": "icons/blueteeth.png",
+        "selectedIconPath": "icons/blueteeth-s.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

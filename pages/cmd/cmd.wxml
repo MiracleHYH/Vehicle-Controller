@@ -1,0 +1,77 @@
+<!--pages/cmd/cmd.wxml-->
+<view class="page-section">
+  <view class="weui-cells__title">里程增量M1 (m)</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" type="digit" placeholder="走过路径绝对累积值" bindinput="setM1"/>
+    </view>
+  </view>
+</view>
+<view class="page-section">
+  <view class="weui-cells__title">里程速度M2 (m/min)</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" type="digit" placeholder="里程速度M2" bindinput="setM2"/>
+    </view>
+  </view>
+</view>
+<view class="page-section">
+  <view class="weui-cells__title">经度</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" type="digit" placeholder="经度" bindinput="setLongitude"/>
+    </view>
+  </view>
+</view>
+<view class="page-section">
+  <view class="weui-cells__title">纬度</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" type="digit" placeholder="纬度" bindinput="setLatitude"/>
+    </view>
+  </view>
+</view>
+<view class="page-section">
+  <view class="weui-cells__title">预留</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <input class="weui-input" type="digit" placeholder="预留不能为空，不需要请填0" placeholder-style="color:#F76260" bindinput="setHolder"/>
+    </view>
+  </view>
+</view>
+<view style="margin-top:30rpx; display:flex; flex-direction:row; flex-wrap:wrap;">
+  <picker class="picker" header-text="模式" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view>
+      模式：{{array[index]}}
+    </view>
+  </picker>
+  <button style="width:35%" class="button" bindtap="SendMsg">
+    <text>submit</text>
+  </button>
+</view>
+<view style="display:flex; align-items:center; justify-content:center;">
+  <view class="cmd-box">
+    <view class="btn" style="margin-top:50rpx; margin-left:80rpx">
+      <image src="/icons/left.png"></image>
+      <button style="width:140rpx" bindtap="turnLeft"></button>
+      <text>左转</text>
+    </view>
+    <view style="margin-top:50rpx; margin-left:80rpx">
+      <view class="btn" wx:if="{{!started}}">
+        <image src="/icons/start.png"></image>
+        <button style="width:140rpx" bindtap="startCar"></button>
+        <text>启动</text>
+      </view>
+      <view class="btn" wx:if="{{started}}">
+        <image src="/icons/stop-1.png"></image>
+        <button style="width:140rpx" bindtap="stopCar"></button>
+        <text>停止</text>
+      </view>
+    </view>
+    <view class="btn" style="margin-top:50rpx; margin-left:80rpx">
+      <image src="/icons/right.png"></image>
+      <button style="width:140rpx" bindtap="turnRight"></button>
+      <text>右转</text>
+    </view>
+  </view>
+</view>

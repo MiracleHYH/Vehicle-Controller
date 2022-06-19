@@ -1,0 +1,14 @@
+@import "./styles/iconfont.wxss";
+
+page,view,text,swiper,swiper-tiem,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+page{
+  /* Theme Color */
+  --themeColor: #1296db;
+  /* default font size */
+  font-size: 28rpx;
+}
